@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <video autoplay loop id="video">
+        <source src="https://motionbgs.com/media/771/pirate-kings-adventure-one-piece.960x540.mp4">
+    </video>
+    <div class="container">
+        <h1>Click Counter Game</h1>
+        <p class="subtitle">Click as fast as u can!</p>
+        <!--Score Display Section-->
+        <div class="score-section">
+            <div class="score-box">
+                <h2>Current Score</h2>
+                <div id="currentScore" class="score">0</div>
+            </div>
+            <div class="score-box">
+                <h2>High Score</h2>
+                <div id="highScore" class="score">0</div>
+            </div>
+        </div>
+        <!--Timer Display-->
+        <div class="timer-section">
+            <h2>Time Remaining</h2>
+            <div id="timer" class="timer">10</div>
+        </div>
+        <!--Game Buttons-->
+        <div class="button-section">
+            <div id="clickButton" disabled class="click-btn">
+                Click Me!
+            </div>
+            <button id="startButton" class="start-btn">
+                Start Game
+            </button>
+            <button id="resetButton" class="reset-btn">Reset High Score</button>
+            <div class="pause" id="pause">
+                <button id="pauseButton" class="pause-btn">Pause game</button>
+                <button id="resumeButton" class="resume-btn">Resume game</button>
+            </div>
+        </div>
+        <!--Game Status Message-->
+        <div id="statusMessage" class="status-message">Click "Start Game" to begin!
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
